@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootsy</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=10;chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link rel="apple-touch-icon" href="./images/favicon.png">
+<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+<meta name="apple-itunes-app" content="app-id=777853164">
+<meta property="og:title" content="Bootsy">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bootsy.io">
+<meta property="og:image" content="http://bootsy.io/images/bootsy-logo-text.png">
+<meta property="og:site_name" content="Boosty">
+<meta property="og:description" content="">
+<meta name="twitter:site" content="@GetBootsy">
+<meta name="twitter:card" content="app">
+
+<style type="text/css">
+html, body {width:100%; height:100%;margin:0; padding:0; background:#fff; font-size:20px; font-weight: normal; }
+body, form, input, button,label {font-family: 'Montserrat','Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#454545; margin:0 auto; text-align:center;padding:0; font-weight:bold;  -webkit-font-smoothing: antialiased;}
+form, input {font-family:  'Montserrat','Helvetica Neue', Helvetica, Arial, 'Lucida Grande',sans-serif; font-size:20px; text-align: left}
+h1,h2,h3,ul,li,p,article,section,form,fieldset {display:block;margin:0; padding:0; list-style-type: none; border:none;}
+img {border:none;}
+a {color:#38b778; text-decoration: none }
+::selection {color: #fff; background:#38b778;}
+hr {background:none; height:0px; border:none; border-bottom:1px solid #d4d4d4; margin:0 auto; }
+header, article, footer {display:block; margin:0 auto;clear:both;}/* header, footer */
+.red {color:#C1382F;}
+
+.form label {display:block;text-align: left; color:#C1382F;}
+.form .form-email { border:1px solid #ccc; background:#efefef;  width:70%; height: 50px; padding:0 4px 0 4px}
+.form .form-button { border:1px solid #C1382F; background:#C1382F;  height: 52px; padding:0 20px; color:#fff;}
+
+
+header h1 {opacity:1;  background:url(./images/bootsy-logo-text.png) 50% 50% no-repeat; background-size: 120px 120px}
+header h1 span { opacity:0;  }
+header nav {float:right;}
+header nav a {color:#6a6b6c; font-size:80%; text-transform: uppercase;}
+header nav a, footer nav a {padding:0 24px;}
+footer {margin:80px auto 0; padding:0 0 40px 0;}
+footer nav {color:#ccc; font-size:80%; margin:30px auto;}
+footer nav a {color:#6a6b6c; text-transform: uppercase;}
+
+/* layout */
+.layout-left, .layout-right {float:left; text-align: left}
+.layout-right {float:right;}
+.layout-half {margin:0 auto; text-align: left}
+
+article h1 {font-size:180%;}
+article h2 {color:#888; margin:40px auto; text-align: center}
+article h3 {font-weight: normal; text-transform: uppercase;}
+article p {font-weight: normal; font-size:100%; }
+article .p-h1 {margin:20px 0; line-height: 30px;}
+article .p-dl {margin:40px 0;}
+article .h1 { margin:80px 0 0 0}
+
+/* phone */
+.phone {width:348px; height: 712px;  border:1px solid #dedede; border-radius:56px}
+.phone-inner {width:300px; height:70%; margin:88px auto 0; border:1px solid #dedede;}
+.phone-carrier {width:100%;height:20px;background:#f3f3f3; border-bottom:1px solid #dedede;}
+.phone-nav {width:100%;}
+
+/* homepage stuff channels */
+.ul {opacity: 0.75; width:100%; }
+.ul li {width:33.333333%; height:90px; float:left;background-color: #fff; position: relative; }
+.li0, .li1, .li3, .li4, .li6, .li7, .li9, .li10, .li12, .li13, .li14 {box-sizing: border-box; display:inline-block;border-right:1px solid #dedede;}
+.ul li {box-sizing: border-box; display:inline-block; border-bottom:1px solid #dedede;}
+
+
+
+/* about phones */
+.phone-body {height: 100%; overflow: hidden}
+
+/* buttons */
+.download { vertical-align: middle; margin-right:14px;}
+.download img {display:inline-block; vertical-align: middle; width:inherit; height:65px;}
+
+/* blockquotes */
+.bq {display:block; vertical-align: top; border-bottom:1px solid #fff;}
+.bq p {display:inline-block; text-align: left; font-size: 112%;vertical-align: top;}
+.bq p b {display:block;}.bq p span {font-size:80%; color:#656565;}
+.bq cite {display: inline-block; text-align: left; margin-right:10px;}
+.bq cite img {display:block; text-align:center; width:50px; height:50px;}.bg cite span {display:none}.bq a {color:#454545;}
+
+/* socialize */
+.socialize {margin: 0 auto; text-align: left;}
+.socialize a {color:#454545; display:inline-block; font-weight:normal; padding:10px; text-align: left}
+.socialize .fa {width:20px;}
+
+/* widths, heights */
+header, article, footer {width:980px;}
+.section {width:800px; margin:0 auto;}
+article { margin-top:48px;overflow: hidden;}
+.article-short {height: 470px; }
+header { height:88px; line-height:100px; }
+.layout-slim {width:420px;}
+.layout-wide, .layout-half {width:550px;}
+.socialize {width:160px;}
+
+/* hover */
+nav a:hover {color: #ccc;}
+
+@media only screen and (max-width : 768px) {
+  header, article, footer, .section {width:100%;}
+  .layout-slim {display:none;float:none;}
+  .layout-wide, .layout-half {width:94%; margin: 0 auto; float:none; display:block;}
+  header { height:60px; line-height:60px; }
+  header h1, header nav {display:block;float:none; text-align: center}
+  header h1 {background-position: 50% 50%}
+  header h1 a {text-indent: -99999em;}
+  header, header nav, footer {background:#efefef;}
+  header nav a, footer nav a {padding:0}
+  footer nav {padding:10px 0 0 0;}
+  footer nav {width:90%;}
+  footer nav a {display:block; text-align:left; padding:10px 0;}
+  header nav a {display:inline-block; width:25%; text-align:center;}
+}
+
+  </style>
+</head>
+<body>
+<header><h1><span>Bootsy</span></h1></header>
+  <article class="article-short">
+    
+    <div class="layout-left layout-slim">
+      <div class="phone">
+        <div class="phone-inner">
+          <div class="phone-carrier"></div>
+          <div class="phone-body">
+            <ul class="ul">
+              <li class="li0"></li>
+              <li class="li1"></li>
+              <li class="li2"></li>
+              <li class="li3"></li>
+              <li class="li4"></li>
+              <li class="li5"></li>              
+              <li class="li6"></li>
+              <li class="li7"></li>
+              <li class="li8"></li>
+              <li class="li9"></li>
+              <li class="li10"></li>
+              <li class="li11"></li>              
+              <li class="li12"></li>
+              <li class="li13"></li>
+              <li class="li14"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-right layout-wide">
+      <h1 class="h1">Bootstrap <br/> for iOS and Android</h1>
+      <p class="p-h1">Building native mobile apps takes too much time. Building with Bootstrap let's you focus on your business problems.</p>
+      <p class="p-dl" >
+        <form class="form" action="//bootsy.us12.list-manage.com/subscribe/post?u=b64b08694976fe6b6517d9554&amp;id=1c9f30c1b8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <fieldset>
+            <label>Get Beta Access</label>
+            <input type="text" name="EMAIL" placeholder="Email" class="form-email" /><input type="hidden" name="b_b64b08694976fe6b6517d9554_1c9f30c1b8" value="" /><input type="submit" value="get it" class="form-button"/>
+         </fieldset>
+       </form>
+      </p>
+    </div>
+
+  </article>
+  <hr/>
+  <footer>
+    <nav>&copy; Bootsy</nav>
+  </footer>
+
+</body>
+</html>
+
